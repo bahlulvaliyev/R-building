@@ -1,0 +1,73 @@
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    .status{
+        height: 100%;
+    }
+    svg{
+        fill: #E6EAEB;
+        position: absolute;
+        left: 48%;
+        top: 250px;
+        width: 40px;
+        height: 40px;
+    }
+}
+body{
+}
+.header-logo{
+    svg{
+        width: 102px;
+        position: fixed;
+        left: 42px;
+        top: 43px;
+        z-index: 105;
+        fill:#175059;
+        }       
+}
+.callus-logo{
+    position: fixed;
+    right: 19px;
+    top: 18px;
+    width: 74px;
+    height: 74px;
+    background-color: #175059;
+    a{
+        svg{
+            padding-left: 25px;
+            padding-top: 25px;
+            width: 24px;
+            height: 24px;
+            fill: #ffffff;
+            
+            
+        }
+
+    }
+}
+.fix-navbar{
+    position: fixed;
+    left: 19px;
+    top: 18px;
+    z-index: 105;
+    width: 74px;
+    height: calc(100%-36px);
+    bottom: 0;
+    &:hover{
+        cursor: pointer;
+    }
+    div{
+        width: 100%;
+        text-align: center;
+        i{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+}
