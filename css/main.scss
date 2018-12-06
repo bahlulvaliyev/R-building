@@ -81,7 +81,12 @@ body{
 }
 
 .index{
-    .first-section{
+    overflow: hidden;
+    .back-linear{
+        background-image: linear-gradient(0deg, #0B363C 10%, rgba(25, 67, 73, 0) 76%);
+
+    }
+    .section{
         position: relative;
         height: 100vh;
         min-width: 720px;
@@ -118,8 +123,8 @@ body{
                 opacity: 0.1;
                 width: 48px;
                 height: 113px;
-                top: 180px;
-                left: 495px;
+                top: 148px;
+                left: 533px;
                 z-index: 1;
             }
             .header-one{
@@ -128,7 +133,7 @@ body{
                 font-size: 70px;
                 line-height: 77px;
                 letter-spacing: -0.89px;
-                padding-top: 303px;;
+                padding-top: 202px;;
             }
             .frs-sec-section-child{
                 margin-top: 70px;
@@ -138,51 +143,28 @@ body{
                 font-family: "IBM Plex Sans Medium";
                 line-height: 25px;
             }
-            .frs-sec-sec-icon-1{
-                font-size: 18px;
-                color: #FFFFFF;
-                line-height: 22.4px;
-                font-family: "IBM Plex Sans SemiBold";
-                text-align: right;
-                position: relative;
-                top: 0;
-                right:380px; 
-                font-weight: bolder;
-                &::after{
-                    content: '';
-                    width: 60px;
-                    height: 3px;;
-                    border-bottom: #ffffff solid 3px;
-                    position: absolute;
-                    top: 30%;
-                    z-index: 1;
-                }
-            }
-            .frs-sec-sec-icon-2{
-                font-size: 14px;
-                color: #FFFFFF;
-                line-height: 22.4px;
-                font-family: "IBM Plex Sans SemiBold";
-                text-align: right;
-                position: relative;
-                top: 10px;
-                right:380px; 
-                opacity: 0.3;
-                &:hover{
-                    opacity: 1;
-                    transition: 0.5s;
-                }
+            
             }
         }
     
         .frs-sec-right{
+            position:absolute;
+            top:0;
+            right: 0;
+            &:hover{
+                .frs-sec-sec-icon-2{opacity:1; transition: 0.5s}
+                .cut-thr-img-1{opacity: 0.7; transition: 0.6s}
+                .cut-thr-img-2{opacity: 0.7; transition: 0.6s}
+                .cut-thr-img-3{opacity: 0.7; transition: 0.6s}
+                
+            }
 
             .kolge-2{
                 position: absolute;
                 background-color: #194349;
                 width: 172px;
                 height: 588px;
-                top: 195px;
+                top: 103px;
                 right: 192px;
                 z-index: 0;
                 opacity: 0.2;
@@ -194,7 +176,7 @@ body{
                 opacity: 0.2;
                 width: 64px;
                 height: 366px;
-                top: 480px;
+                top: 397px;
                 right: 84px;
                 z-index: 1;
             }
@@ -208,18 +190,19 @@ body{
                     background-image: url("../image/cutting-image.jpg");
                     background-size: auto 470px;
                     position: absolute;
-                    top: -144%;
+                    top: 128px;
                     left: -90px;
                     width: 38%;
                     height: 100%;
                     background-position: 0px 0px;
+                    transition: 3s;
                 }
                 .cut-thr-img-2{
                     background-image: url("../image/cutting-image.jpg");
                     background-size: auto 470px;
                     position: absolute;
-                    top: -124%;
-                    left: 23%;
+                    top: 223px;
+                    left: 21%;
                     width: 28%;
                     height: 74%;
                     background-position: -169px -99px;
@@ -229,16 +212,223 @@ body{
                     background-image: url("../image/cutting-image.jpg");
                     background-size: auto 470px;
                     position: absolute;
-                    top: -135%;
-                    left: 60%;
+                    top: 178px;
+                    left: 58%;
                     width: 17%;
                     height: 55%;
                     background-position: -299px -38px;
                     z-index: 1;
                 }
+                .frs-sec-sec-icon-1{
+                    font-size: 18px;
+                    color: #FFFFFF;
+                    line-height: 22.4px;
+                    font-family: "IBM Plex Sans SemiBold";
+                    text-align: right;
+                    position: absolute;
+                    top: 522px;
+                    right: 512px; 
+                    font-weight: bolder;
+                    &::after{
+                        content: '';
+                        width: 60px;
+                        height: 3px;;
+                        border-bottom: #ffffff solid 3px;
+                        position: absolute;
+                        left: 38px;
+                        top: 10px;
+                        z-index: 1;
+                    }
+                }
+                .frs-sec-sec-icon-2{
+                    width: 110px;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    line-height: 22.4px;
+                    font-family: "IBM Plex Sans SemiBold";
+                    text-align: right;
+                    position: absolute;
+                    top: 556px;
+                    right: 512px; 
+                    opacity: 0.3;
+                    
             }
+
         }
         
     }
+
+}
+
+/*Section two*/
+
+.section-two{
+    background: #0b363c url("../image/home-dev.png");
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+
+}
+.sec-tw-content{
+    font-size: 42px;
+    line-height: 55px;
+    font-family: "IBM Plex Sans SemiBold";
+    color: #fff;
+    position: relative;
+    left: 15%;
+    top: 25%;
+    &::before{
+        content: "";
+        width: 7px;
+        height: 100px;
+        background-color: #175059;
+        position: absolute;
+        top: 3px;
+        left: -20px;
+    }
+}
+.content{
+    .sec-tw-mini-p{
+        width: 410px;
+        margin-left: 17%;
+        margin-top: 70px;
+        float: left;
+        p{
+            color: #ffffff;
+            font-size: 14px;
+            font-family: "IBM Plex Sans Medium";
+            line-height: 22px;
+            font-weight: 700;
+            opacity: 0.5;
+        }
+    }
+ }
+ .sec-tw-button{
+    position: absolute;
+    margin-top: 18%;
+    left: 20%;
+    .sec-tw-butt-2{
+        content: "";
+        width: 150px;
+        height: 45px;
+        border: 3px solid #244a50;
+        margin-left: -45px;
+    }
+    &:hover{
+        span{
+            position: relative;
+            margin-left: 10px;
+            transition: 0.5s;
+        }
+        .sec-tw-butt-1{
+            margin-left: -15px;
+            transition: 0.6s;
+        }
+    }
+    .sec-tw-butt-1{
+        width: 150px;
+        height: 45px;
+        color: #ffffff;
+        font-size: 17px;
+        font-family: "IBM Plex Sans Medium";
+        position: absolute;
+        left: -7px;
+        top: 16px;
+        span{
+            font-weight: bolder;
+        }
+       
+    }
+
+.tw-sec-right{
+    position:absolute;
+    top:0;
+    right: 0;
+    &:hover{
+        .frs-sec-sec-icon-2{opacity:1; transition: 0.5s}
+        .cut-thr-img-4{opacity: 0.7; transition: 0.6s}
+        .cut-thr-img-5{opacity: 0.7; transition: 0.6s}
+        .cut-thr-img-6{opacity: 0.7; transition: 0.6s}
+        
+    }
+
+    .cut-thr-img{
+        position: relative;
+        transition: opacity .5s;
+        height: 470px;
+        width: 360px;
+        float: right;
+        .cut-thr-img-4{
+            background-image: url("../image/cutting-image-2.jpg");
+            background-size: auto 470px;
+            position: absolute;
+            top: 128px;
+            left: -90px;
+            width: 38%;
+            height: 100%;
+            background-position: 0px 0px;
+            transition: 3s;
+        }
+        .cut-thr-img-5{
+            background-image: url("../image/cutting-image.jpg");
+            background-size: auto 470px;
+            position: absolute;
+            top: 223px;
+            left: 21%;
+            width: 28%;
+            height: 74%;
+            background-position: -169px -99px;
+            
+        }
+        .cut-thr-img-6{
+            background-image: url("../image/cutting-image-2.jpg");
+            background-size: auto 470px;
+            position: absolute;
+            top: 178px;
+            left: 58%;
+            width: 17%;
+            height: 55%;
+            background-position: -299px -38px;
+            z-index: 1;
+        }
+        .frs-sec-sec-icon-3{
+            font-size: 18px;
+            color: #FFFFFF;
+            line-height: 22.4px;
+            font-family: "IBM Plex Sans SemiBold";
+            text-align: right;
+            position: absolute;
+            top: 522px;
+            right: 512px; 
+            font-weight: bolder;
+            &::after{
+                content: '';
+                width: 60px;
+                height: 3px;;
+                border-bottom: #ffffff solid 3px;
+                position: absolute;
+                left: 38px;
+                top: 10px;
+                z-index: 1;
+            }
+        }
+        .frs-sec-sec-icon-4{
+            width: 110px;
+            font-size: 14px;
+            color: #FFFFFF;
+            line-height: 22.4px;
+            font-family: "IBM Plex Sans SemiBold";
+            text-align: right;
+            position: absolute;
+            top: 556px;
+            right: 512px; 
+            opacity: 0.3;
+            
+    }
+
+}
+
+}
 
 }

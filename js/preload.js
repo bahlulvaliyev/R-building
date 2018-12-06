@@ -1,5 +1,5 @@
-$(window).on('load',()=>{
-    $('.status').fadeOut(2500);
-    $('loader').slideUp(2500);
-    $('body').css({'overflow': 'visible'});
-})
+$(document).ready(function () {
+    $('.section-two').on('mouseneter',()=>{
+        $('.cut-thr-img-1').animate({width: 0})
+    })
+});
