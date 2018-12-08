@@ -15,7 +15,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    navText: ["<span class='next' > -</span>Next", "Prev<span class='prev'> -</span>"],
+    navText: ["<span class='next' > -  </span>Next", "Prev<span class='prev'>  -  </span>"],
     navClass: ['owl-prev', 'owl-next'],
     responsive:{
         0:{
