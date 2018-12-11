@@ -30,3 +30,10 @@ $('.owl-carousel').owlCarousel({
     }
     
 })
+
+$(document).ready(function () {
+    $('.fix-navbar').click(function (){ 
+        
+        
+    });
+});
