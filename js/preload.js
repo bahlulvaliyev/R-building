@@ -32,8 +32,30 @@ $('.owl-carousel').owlCarousel({
 })
 
 $(document).ready(function () {
-    $('.fix-navbar').click(function (){ 
-        
-        
-    });
+    var i = 0;
+    $('.fix-navbar').on('click',()=>{
+        i++;
+        if(i % 2 == 0){
+            $('.fix-navbar').css({
+            'background-color': ''
+            });
+
+            $('.fix-navbar').animate({
+                width: ''               
+            },300);
+        }else{
+            $('.fix-navbar').css({
+                'background-color': '#175059'
+                });
+            $('.fix-navbar').animate({
+                width:'100%'               
+            },300);
+        }
+        $('.hide_fixed_navbar').slideToggle();
+        $('.hide-nav').slideToggle();
+          
+        $('.show').slideToggle();
+        $('.hide').slideToggle();
+     })
+    $('.')
 });
